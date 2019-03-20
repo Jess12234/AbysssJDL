@@ -13,7 +13,6 @@
 		299F7BD4223FCF08005F5E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299F7BD2223FCF08005F5E58 /* Main.storyboard */; };
 		299F7BD6223FCF09005F5E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299F7BD5223FCF09005F5E58 /* Assets.xcassets */; };
 		299F7BD9223FCF09005F5E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299F7BD7223FCF09005F5E58 /* LaunchScreen.storyboard */; };
-		299F7BE1223FD163005F5E58 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F7BE0223FD163005F5E58 /* DataManager.swift */; };
 		299F7BE3223FD444005F5E58 /* MovieDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F7BE2223FD444005F5E58 /* MovieDataModel.swift */; };
 		299F7BE5223FD458005F5E58 /* MovieDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299F7BE4223FD458005F5E58 /* MovieDataController.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		299F7BD5223FCF09005F5E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		299F7BD8223FCF09005F5E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		299F7BDA223FCF09005F5E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		299F7BE0223FD163005F5E58 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		299F7BE2223FD444005F5E58 /* MovieDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataModel.swift; sourceTree = "<group>"; };
 		299F7BE4223FD458005F5E58 /* MovieDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +67,6 @@
 				299F7BD5223FCF09005F5E58 /* Assets.xcassets */,
 				299F7BD7223FCF09005F5E58 /* LaunchScreen.storyboard */,
 				299F7BDA223FCF09005F5E58 /* Info.plist */,
-				299F7BE0223FD163005F5E58 /* DataManager.swift */,
 				299F7BE2223FD444005F5E58 /* MovieDataModel.swift */,
 				299F7BE4223FD458005F5E58 /* MovieDataController.swift */,
 			);
@@ -148,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				299F7BD1223FCF08005F5E58 /* DetailViewController.swift in Sources */,
-				299F7BE1223FD163005F5E58 /* DataManager.swift in Sources */,
 				299F7BE5223FD458005F5E58 /* MovieDataController.swift in Sources */,
 				299F7BE3223FD444005F5E58 /* MovieDataModel.swift in Sources */,
 				299F7BCF223FCF08005F5E58 /* MasterViewController.swift in Sources */,
