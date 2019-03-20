@@ -10,7 +10,7 @@ import UIKit
 
 class MovieDataController: NSObject {
 
-    let JSONURL = ""
+    let JSONURL = "https://api.myjson.com/bins/1e5uji"
     
     func getRebootData()
     {

@@ -67,8 +67,8 @@
 				299F7BD5223FCF09005F5E58 /* Assets.xcassets */,
 				299F7BD7223FCF09005F5E58 /* LaunchScreen.storyboard */,
 				299F7BDA223FCF09005F5E58 /* Info.plist */,
-				299F7BE2223FD444005F5E58 /* MovieDataModel.swift */,
 				299F7BE4223FD458005F5E58 /* MovieDataController.swift */,
+				299F7BE2223FD444005F5E58 /* MovieDataModel.swift */,
 			);
 			path = AbyssJSON_JDL;
 			sourceTree = "<group>";

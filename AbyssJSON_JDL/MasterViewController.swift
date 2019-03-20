@@ -12,6 +12,14 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
+    let dataController = MovieDataController()
+    var rebootDataModel: MovieDataModel?
+    {
+        didSet{
+            
+        }
+    }
+        
     var dataGrabber = DataManager()
 
 
