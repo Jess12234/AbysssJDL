@@ -19,10 +19,7 @@ class MasterViewController: UITableViewController {
             
         }
     }
-        
-    var dataGrabber = DataManager()
-
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,13 +32,27 @@ class MasterViewController: UITableViewController {
         
         self.title = "Movies"
         
-        dataGrabber.getData(completion: {
-            success in self.objects = self.dataGrabber.dataArray
-            
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+        let titleImage = UIImage(named: "irdblogo")
+        let titleImageView = UIImageView(image: titleImage)
+        navigationItem.titleView = titleImageView
+        
+        
+        dataController.getRebootDataModel
+        
+            do {
+                
+                let decoder =
+                
+                let mediaData =
+                
+                self.rebootDataModel
+                
             }
-        })
+        catch let err
+        {
+            print("Err", err)
+        }
+        
         
     }
 
