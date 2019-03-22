@@ -16,7 +16,7 @@ class MasterViewController: UITableViewController {
     var rebootDataModel: MovieDataModel?
     {
         didSet{
-            
+            tableView.reloadData()
         }
     }
     
@@ -36,23 +36,8 @@ class MasterViewController: UITableViewController {
         let titleImageView = UIImageView(image: titleImage)
         navigationItem.titleView = titleImageView
         
-        
-        dataController.getRebootDataModel
-        
-            do {
-                
-                let decoder =
-                
-                let mediaData =
-                
-                self.rebootDataModel
-                
-            }
-        catch let err
-        {
-            print("Err", err)
-        }
-        
+        dataController.getRebootData(completion: { dataModel in self.rebootDataModel = dataModel
+        })
         
     }
 

@@ -12,7 +12,7 @@ class MovieDataController: NSObject {
 
     let JSONURL = "https://api.myjson.com/bins/1e5uji"
     
-    func getRebootDat(compleation: @escaping (_ success: Data) -> ())
+    func getRebootData(compleation: @escaping (_ success: Data) -> ())
     {
         var success = Data()
         let jsonUrl = URL (string: JSONURL)
