@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="irdblogo" translatesAutoresizingMaskIntoConstraints="NO" id="vxX-EA-CdG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="irdblogo" translatesAutoresizingMaskIntoConstraints="NO" id="vxX-EA-CdG">
                                 <rect key="frame" x="124" y="301" width="127" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.76862745098039209" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vxX-EA-CdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="6Wr-sf-vGG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vxX-EA-CdG" secondAttribute="trailing" constant="124" id="FyY-PV-vA0"/>
+                            <constraint firstItem="vxX-EA-CdG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="281" id="Izi-4a-VHU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vxX-EA-CdG" secondAttribute="bottom" constant="301" id="oxl-2l-Zff"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -33,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="irdblogo" width="103" height="51"/>
+        <image name="irdblogo" width="51" height="25"/>
     </resources>
 </document>

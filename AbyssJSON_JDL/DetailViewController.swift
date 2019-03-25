@@ -28,7 +28,7 @@ class DetailViewController: UIViewController {
         configureView()
     }
 
-    var detailItem: String? {
+    var detailItem: Entry? {
         didSet {
             // Update the view.
             configureView()
