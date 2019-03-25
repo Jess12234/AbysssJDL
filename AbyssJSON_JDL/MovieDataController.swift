@@ -10,38 +10,37 @@ import UIKit
 
 class MovieDataController: NSObject {
 
-    let JSONURL = "https://api.myjson.com/bins/1e5uji"
-    var dataModel: Any?
-    
-    func getRebootData(completion: @escaping (_ dataModel: MovieDataModel) -> ())
-    {
-        let jsonUrl = URL (string: JSONURL)
+    let jsonURL = "https://api.myjson.com/bins/1e5uji"
+    var MDM = MovieDataModel()
+    func getData (completion: @escaping (_ success:MovieDataModel) -> ()){
         
-        let dataTask = URLSession.shared.dataTask(with: jsonUrl!)
-        {
-            (data,response,error) in
-            guard let data = data else
-            {
+        let jurl = URL(string: jsonURL)
+        let session = URLSession.shared
+        let task = session.dataTask(with: jurl!) {(data,response, error) in
+            
+            if error != nil {
                 return
             }
-            do {
+            guard let data = data else {
+                // call the decoder and run it through the model
+                return
+            }
+            
+            do{
                 let decoder = JSONDecoder()
-                let mediaData = try
-                    decoder.decode(MovieDataModel.self, from: data)
-                
-                self.dataModel = mediaData
+                let mediaData = try decoder.decode(MovieDataModel.self, from: data)
+                self.MDM = mediaData
+            }catch{
+                print(error)
+                return
             }
-            catch let err
-            {
-                print("Err", err)
+            DispatchQueue.main.async{
+                completion(self.MDM as! MovieDataModel)
             }
         }
-        
-        DispatchQueue.main.async{
-            completion(self.dataModel as! MovieDataModel)
-        }
-        
-        dataTask.resume()
+        task.resume()
     }
     
 }
+
+

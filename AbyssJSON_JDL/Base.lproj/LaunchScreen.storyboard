@@ -19,15 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="irdblogo" translatesAutoresizingMaskIntoConstraints="NO" id="vxX-EA-CdG">
-                                <rect key="frame" x="124" y="301" width="127" height="65"/>
+                                <rect key="frame" x="120" y="302" width="135" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="CZ6-RW-t3b"/>
+                                    <constraint firstAttribute="height" constant="62" id="r01-Ed-Qbe"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.76862745098039209" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vxX-EA-CdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="6Wr-sf-vGG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vxX-EA-CdG" secondAttribute="trailing" constant="124" id="FyY-PV-vA0"/>
-                            <constraint firstItem="vxX-EA-CdG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="281" id="Izi-4a-VHU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vxX-EA-CdG" secondAttribute="bottom" constant="301" id="oxl-2l-Zff"/>
+                            <constraint firstItem="vxX-EA-CdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="RL6-Ln-h7p"/>
+                            <constraint firstItem="vxX-EA-CdG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="282" id="VwG-dt-U7e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vxX-EA-CdG" secondAttribute="trailing" constant="120" id="y0b-di-DHa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vxX-EA-CdG" secondAttribute="bottom" constant="303" id="yHn-6Q-2OD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
