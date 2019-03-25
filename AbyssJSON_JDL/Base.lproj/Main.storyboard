@@ -86,7 +86,7 @@
                                             <constraint firstAttribute="width" constant="216" id="TXV-s1-dNQ"/>
                                         </constraints>
                                         <color key="tintColor" red="0.96078431369999995" green="0.76862745099999996" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Cast"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of the thing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvB-hv-QcN">
                                         <rect key="frame" x="151" y="8" width="186" height="29"/>
@@ -263,7 +263,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="irdblogo" width="103" height="51"/>
+        <image name="irdblogo" width="51" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
